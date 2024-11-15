@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Results</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="fade-in">
+    <div class="container">
+        <h1>Search Results</h1>
+        <p>Displaying results for: <span id="search-query"></span></p>
+    </div>
+
+    <script>
+        // Retrieve the saved search query and display it
+        const searchQuery = localStorage.getItem('searchQuery');
+        document.getElementById('search-query').innerText = searchQuery || 'No query entered';
+    </script>
+</body>
+</html>
